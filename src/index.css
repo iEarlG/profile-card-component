@@ -3,10 +3,65 @@
 :root {
   font-family: 'Kumbh Sans', sans-serif;
   color: aliceblue;
-  background-color: #242424;
 
   --dark-cyan: hsl(185, 75%, 39%);
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
+
+  background: url(./assets/images/bg-pattern-top.svg), url(./assets/images/bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--dark-cyan);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container { 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 375px;
+  margin: 100px auto;
+  background: hsl(0, 0%, 100%);
+  width: 350px;
+  border-radius: 15px;
+}
+
+.cover__photo-box { 
+  width: 100%;
+}
+.cover-img { 
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.profile-photo { 
+  margin-bottom: 2rem;
+}
+.profile-img { 
+  position: absolute;
+  border-radius: 50%;
+  left: 46%;
+  bottom: 65%;
+  border: 5px solid white;
+}
+
+.profile-info { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 1rem;
+  color: var(--very-dark-desaturated-blue);
+}
+.profile-info h1 { 
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  text-align: center;
 }
