@@ -7,37 +7,40 @@ const Contents = () => {
   return (
     <main>
       <div className="container">
-        <div className="cover__photo-box">
-          <img src={coverPhoto} alt="coverPhoto" className="cover-img" />
-        </div>
+        <div className="wrapper">
+           <img src={coverPhoto} alt="cover-photo" />
 
-        <div className="profile-photo">
-          <img src={profilePhoto} alt="profilePhoto" className="profile-img" />
-        </div>
+          <div className="contents">
+            <img src={profilePhoto} alt="profile" />
+            <h2>Victor Crest 
+              <span>26</span>
+            </h2>
+            <p className="city">London</p>
 
-        <div className="profile-info">
-          <h1>Victor Crest</h1>
-          <p>26</p>
-        </div>
-        <p className="profile-location">London</p>
+            <div className="content">
+              <div>
+                <h1 className="stats">80k</h1>
+                <p>Followers</p>
+              </div>
 
-        <div></div>
+              <div>
+                <h1 className="stats">803k</h1>
+                <p>Likes</p>
+              </div>
 
-        <div className="profile__stats">
-          <div className="followers">
-            <h1>80k</h1>
-            <p>Followers</p>
+              <div>
+                <h1 className="stats">1.4k</h1>
+                <p>Photos</p>
+              </div>
+            </div>
           </div>
-          <div className="likes">
-            <h1>803k</h1>
-            <p>Likes</p>
-          </div>
-          <div className="photos">
-            <h1>1.4k</h1>
-            <p>Photos</p>
-          </div>
+        </div>
+        <div className="attribution">
+          Challenge by<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/iEarlG" target="_blank">Earl A. Villapaz</a>.
         </div>
       </div>
+
     </main>
   );
 };
