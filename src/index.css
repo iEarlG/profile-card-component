@@ -24,7 +24,8 @@ body {
   background-image: url(./assets/images/bg-pattern-top.svg),
     url(./assets/images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: right 76vh bottom 53vh, left 75vh top 49vh;
+  background-position: right 80vh bottom 53vh, left 90vh top 50vh;
+  background-clip: fixed;
 }
 
 .container { 
@@ -72,7 +73,7 @@ body {
   border-top: 1px solid #e6e6e6;
   padding: 22px 50px 0px;
 }
-.content h1.stats { 
+.content h1 { 
   font-size: 18px;
   font-weight: 700;
   color: #272938;
@@ -93,6 +94,12 @@ body {
 }
 .attribution a { 
   color: #f4f4f7;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-position: right 13vh bottom 56vh, left 15vh top 49vh;
+  }
 }
 
 @media screen and (max-width: 430px) {
