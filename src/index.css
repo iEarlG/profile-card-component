@@ -20,12 +20,10 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
-  background-color: hsl(185, 75%, 39%);
-  background-image: url(./assets/images/bg-pattern-top.svg),
-    url(./assets/images/bg-pattern-bottom.svg);
+  background: url(./assets/images/bg-pattern-top.svg), url(./assets/images/bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   background-repeat: no-repeat, no-repeat;
-  background-position: right 80vh bottom 53vh, left 90vh top 50vh;
-  background-clip: fixed;
+  background-color: hsl(185deg, 75%, 39%);
 }
 
 .container { 
